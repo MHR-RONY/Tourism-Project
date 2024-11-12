@@ -1,0 +1,829 @@
+<!DOCTYPE html><html lang="en" dir="ltr"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Packages</title>
+<link rel="icon" type="images_folder/image3/png" href="images_folder/images/favicon.png">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/all.min.css">
+<link href="css/owl.carousel.css" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap-select.min.css">
+<link rel="stylesheet" href="css/prettyCheckable.css">
+<link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css">
+<link href="css/style_1.css" rel="stylesheet" type="text/css">
+<link href="css/responsive.css" rel="stylesheet" type="text/css">
+<link href="css/ele-style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div id="header"></div>
+
+<div class="bread-crumb">
+	<div class="container">
+		<h2>Packages</h2>
+		<ul class="d-flex justify-content-center list-group-horizontal p-0">
+			<li class="list-group-item"><a href="index.html">home</a></li>
+			<li class="list-group-item"><a href="packages.html">Packages</a></li>
+		</ul>
+	</div>
+</div>
+
+<div class="placetop">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="left-box">
+					<h6>BOOK NOW</h6>
+					<div class="book">
+						<ul class="nav nav-tabs list-inline" role="tablist">
+							<li class="active">
+								<input type="checkbox" value="None" name="pool" class="checkclass checkbox-inline">
+								 <a class="nav-link active" id="tour-tab" data-bs-toggle="tab" data-bs-target="#tour" role="tab">tour</a>
+							</li>
+							<li class="">
+								<input type="checkbox" value="None" name="pool" class="checkclass checkbox-inline">
+								 <a class="nav-link" id="hotel-tab" data-bs-toggle="tab" data-bs-target="#hotel" role="tab">hotel</a>
+							</li>
+							<li class="">
+								<input type="checkbox" value="None" name="pool" class="checkclass checkbox-inline">
+								<a class="nav-link" id="flight-tab" data-bs-toggle="tab" data-bs-target="#flight" role="tab">flights</a>
+							</li>
+							<li class="">
+								<input type="checkbox" value="None" name="pool" class="checkclass checkbox-inline">
+								 <a class="nav-link" id="package-tab" data-bs-toggle="tab" data-bs-target="#package" role="tab">Packages</a>
+							</li>
+							<li class="">
+								<input type="checkbox" value="None" name="pool" class="checkclass checkbox-inline">
+								<a class="nav-link" id="place-tab" data-bs-toggle="tab" data-bs-target="#place" role="tab">places</a>
+							</li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane fade show active" id="tour" role="tabpanel">
+								<form class="form-horizontal" method="post">
+									<div class="form-group">
+										<h2>Where</h2>
+										<label>Destination</label>
+										<input name="s" class="form-control" value="" placeholder="Enter a destination or tour type.." type="text">
+									</div>
+									<div class="form-group">
+										<h2>When</h2>
+										<div class="date">
+											<label>From</label>
+											<div class="input-group date" id="datepicker">
+							                    <input name="s" class="form-control" value="" placeholder="dd/mm/yy" type="text">
+							                    <span class="input-group-append">
+							                        <button type="button" class="calender">
+							                          <i class="fa-regular fa-calendar"></i>
+							                        </button>
+							                    </span>
+							                </div>
+										</div>
+									</div>
+									<div class="date form-group">
+										<label>To</label>
+										<div class="input-group date" id="datepicker1">
+						                    <input name="s" class="form-control" value="" placeholder="dd/mm/yy" type="text">
+						                    <span class="input-group-append">
+						                        <button type="button" class="calender">
+						                          <i class="fa-regular fa-calendar"></i>
+						                        </button>
+						                    </span>
+							            </div>
+									</div>
+									<div class="form-group position-relative">
+										<label>Trip Type</label>
+										<div class="selec-icon">
+											<i class="fa fa-angle-down" aria-hidden="true"></i>
+										</div>
+										<select class="selectpicker form-control" name="location">
+											<option value="1">Trip Type</option>
+											<option value="0">Location 1</option>
+											<option value="0">Location 2</option>
+											<option value="0">Location 3</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label>Max Budget</label>
+										<input name="s" class="form-control" value="" placeholder="Max budget ($)" type="text">
+									</div>
+									<div class="text-center">
+										<button class="btn-primary" type="button">Proceed</button>
+									</div>
+								</form>
+							</div>
+							<div class="tab-pane fade" id="hotel" role="tabpanel">
+								<form class="form-horizontal" method="post">
+									<div class="form-group">
+										<h2>Where</h2>
+										<label>Destination</label>
+										<input name="s" class="form-control" value="" placeholder="Enter a destination or tour type.." type="text">
+									</div>
+									<div class="form-group">
+										<h2>When</h2>
+										<div class="date">
+											<label>check in</label>
+											<div class="input-group date" id="datepicker2">
+						                    <input name="s" class="form-control" value="" placeholder="dd/mm/yy" type="text">
+						                    <span class="input-group-append">
+						                        <button type="button" class="calender">
+						                          <i class="fa-regular fa-calendar"></i>
+						                        </button>
+						                    </span>
+							            	</div>
+										</div>
+									</div>
+									<div class="date form-group">
+										<label>check out</label>
+										<div class="input-group date" id="datepicker3">
+						                    <input name="s" class="form-control" value="" placeholder="dd/mm/yy" type="text">
+						                    <span class="input-group-append">
+						                        <button type="button" class="calender">
+						                          <i class="fa-regular fa-calendar"></i>
+						                        </button>
+						                    </span>
+							            </div>
+									</div>
+									<div class="row">
+										<div class="col-md-6 col-sm-12">
+											<div class="form-group position-relative">
+												<label>Rooms</label>
+												<div class="selec-icon">
+													<i class="fa fa-angle-down" aria-hidden="true"></i>
+												</div>
+												<select class="selectpicker form-control" name="location">
+													<option value="1">01</option>
+													<option value="0">02</option>
+													<option value="0">03</option>
+													<option value="0">04</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-md-6 col-sm-12">
+											<div class="form-group position-relative">
+												<label>adults</label>
+												<div class="selec-icon">
+													<i class="fa fa-angle-down" aria-hidden="true"></i>
+												</div>
+												<select class="selectpicker form-control" name="location">
+													<option value="1">01</option>
+													<option value="0">02</option>
+													<option value="0">03</option>
+													<option value="0">04</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6 col-sm-12">
+											<div class="form-group position-relative">
+												<label>kids</label>
+												<div class="selec-icon">
+													<i class="fa fa-angle-down" aria-hidden="true"></i>
+												</div>
+												<select class="selectpicker form-control" name="location">
+													<option value="1">01</option>
+													<option value="0">02</option>
+													<option value="0">03</option>
+													<option value="0">04</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="text-center">
+										<button class="btn-primary" type="button">Proceed</button>
+									</div>
+								</form>
+							</div>
+							<div class="tab-pane fade" id="flight" role="tabpanel">
+								<form class="form-horizontal" method="post">
+									<div class="form-group">
+										<h2>Where</h2>
+										<label>Leaving from</label>
+										<input name="s" class="form-control" value="" placeholder="City,district,specific airport.." type="text">
+									</div>
+									<div class="form-group">
+										<label>Going to</label>
+										<input name="s" class="form-control" value="" placeholder="City,district,specific airport.." type="text">
+									</div>
+									<div class="form-group">
+										<h2>When</h2>
+										<div class="date">
+											<label>Departing 0n</label>
+											<div class="input-group date" id="datepicker4">
+							                    <input name="s" class="form-control" value="" placeholder="dd/mm/yy" type="text">
+							                    <span class="input-group-append">
+							                        <button type="button" class="calender">
+							                          <i class="fa-regular fa-calendar"></i>
+							                        </button>
+							                    </span>
+							            	</div>
+										</div>
+									</div>
+									<div class="date form-group">
+										<label>Arriving on</label>
+										<div class="input-group date" id="datepicker5">
+						                    <input name="s" class="form-control" value="" placeholder="dd/mm/yy" type="text">
+						                    <span class="input-group-append">
+						                        <button type="button" class="calender">
+						                          <i class="fa-regular fa-calendar"></i>
+						                        </button>
+						                    </span>
+							            </div>
+									</div>
+									<div class="row">
+										<div class="col-md-6 col-sm-12">
+											<div class="form-group position-relative">
+												<label>adults</label>
+												<div class="selec-icon">
+													<i class="fa fa-angle-down" aria-hidden="true"></i>
+												</div>
+												<select class="selectpicker form-control" name="location">
+													<option value="1">01</option>
+													<option value="0">02</option>
+													<option value="0">03</option>
+													<option value="0">04</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-md-6 col-sm-12">
+											<div class="form-group position-relative">
+												<label>Infact</label>
+												<div class="selec-icon">
+													<i class="fa fa-angle-down" aria-hidden="true"></i>
+												</div>
+												<select class="selectpicker form-control" name="location">
+													<option value="1">01</option>
+													<option value="0">02</option>
+													<option value="0">03</option>
+													<option value="0">04</option>
+												</select>
+											</div>
+										</div>
+
+									</div>
+									<div class="row">
+										<div class="col-md-6 col-sm-12">
+											<div class="form-group position-relative">
+												<label>kids</label>
+												<div class="selec-icon">
+													<i class="fa fa-angle-down" aria-hidden="true"></i>
+												</div>
+												<select class="selectpicker form-control" name="location">
+													<option value="1">01</option>
+													<option value="0">02</option>
+													<option value="0">03</option>
+													<option value="0">04</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-md-6 col-sm-12">
+											<div class="form-group">
+												<label>Promo code</label>
+												<input type="text" name="code" class="form-control" placeholder="type here">
+											</div>
+										</div>
+									</div>
+									<div class="text-center">
+										<button class="btn-primary" type="button">Proceed</button>
+									</div>
+								</form>
+							</div>
+							<div class="tab-pane fade" id="package" role="tabpanel">
+								<form class="form-horizontal" method="post">
+									<div class="form-group">
+										<label>Destination</label>
+										<input name="s" class="form-control" value="" placeholder="Enter a destination or tour type.." type="text">
+									</div>
+									<div class="form-group position-relative">
+										<label>City</label>
+										<div class="selec-icon">
+											<i class="fa fa-angle-down" aria-hidden="true"></i>
+										</div>
+										<select class="selectpicker form-control" name="location">
+											<option value="1">Choose city</option>
+											<option value="0">02</option>
+											<option value="0">03</option>
+											<option value="0">04</option>
+										</select>
+									</div>
+									<div class="form-group position-relative">
+										<label>Category</label>
+										<div class="selec-icon">
+											<i class="fa fa-angle-down" aria-hidden="true"></i>
+										</div>
+										<select class="selectpicker form-control" name="location">
+											<option value="1">Choose category</option>
+											<option value="0">02</option>
+											<option value="0">03</option>
+											<option value="0">04</option>
+										</select>
+									</div>
+									<div class="form-group position-relative">
+										<label>No.of persons</label>
+										<div class="selec-icon">
+											<i class="fa fa-angle-down" aria-hidden="true"></i>
+										</div>
+										<select class="selectpicker form-control" name="location">
+											<option value="1">Choose no.of persons</option>
+											<option value="0">02</option>
+											<option value="0">03</option>
+											<option value="0">04</option>
+										</select>
+									</div>
+									<div class="row">
+										<div class="col-md-6 col-sm-12">
+											<div class="form-group position-relative">
+												<label>min price</label>
+												<div class="selec-icon">
+													<i class="fa fa-angle-down" aria-hidden="true"></i>
+												</div>
+												<select class="selectpicker form-control" name="location">
+													<option value="1">Min Price</option>
+													<option value="0">02</option>
+													<option value="0">03</option>
+													<option value="0">04</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-md-6 col-sm-12">
+											<div class="form-group position-relative">
+												<label>Max Price</label>
+												<div class="selec-icon">
+													<i class="fa fa-angle-down" aria-hidden="true"></i>
+												</div>
+												<select class="selectpicker form-control" name="location">
+													<option value="1">Max Price</option>
+													<option value="0">02</option>
+													<option value="0">03</option>
+													<option value="0">04</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="text-center">
+										<button class="btn-primary" type="button">Proceed</button>
+									</div>
+								</form>
+							</div>
+							<div class="tab-pane fade" id="place" role="tabpanel">
+								<form class="form-horizontal" method="post">
+									<div class="form-group">
+										<label>country</label>
+										<input name="s" class="form-control" value="" placeholder="Type country here" type="text">
+									</div>
+									<div class="form-group position-relative">
+										<label>City</label>
+										<div class="selec-icon">
+											<i class="fa fa-angle-down" aria-hidden="true"></i>
+										</div>
+										<select class="selectpicker form-control" name="location">
+											<option value="1">Choose city</option>
+											<option value="0">Delhi</option>
+											<option value="0">Ludhaiana</option>
+											<option value="0">Jalandhar</option>
+										</select>
+									</div>
+									<div class="form-group position-relative">
+										<label>Category	</label>
+										<div class="selec-icon">
+											<i class="fa fa-angle-down" aria-hidden="true"></i>
+										</div>
+										<select class="selectpicker form-control" name="location">
+											<option value="1">Choose category</option>
+											<option value="0">Delhi</option>
+											<option value="0">Ludhaiana</option>
+											<option value="0">Jalandhar</option>
+										</select>
+									</div>
+									<div class="text-center">
+										<button class="btn-primary" type="button">Proceed</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+
+
+			</div>
+			<div class="col-sm-9 mainpage">
+				<div class="row sort">
+					<div class="col-sm-3">
+						<div class="form-group input-group input-group-sm align-items-center d-flex position-relative mb-3">
+							<label class="input-group-addon" for="input-sort">Sort By :    </label>
+							<div class="selec-icon">
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+							</div>
+							<select id="input-sort" class="form-control selectpicker bs-select-hidden">
+								<option value="" selected="selected">Categories</option>
+								<option value="">Name (A - Z)</option>
+								<option value="">Name (Z - A)</option>
+								<option value="">Price (Low &gt; High)</option>
+								<option value="">Price (High &gt; Low)</option>
+								<option value="">Rating (Highest)</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="form-group input-group input-group-sm position-relative mb-3">
+							<div class="selec-icon">
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+							</div>
+							<select id="input-name" class="form-control selectpicker bs-select-hidden">
+								<option value="" selected="selected">Name</option>
+								<option value="">Name (A - Z)</option>
+								<option value="">Name (Z - A)</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="form-group input-group input-group-sm position-relative mb-3">
+							<div class="selec-icon">
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+							</div>
+							<select id="input-rating" class="form-control selectpicker bs-select-hidden">
+								<option value="" selected="selected">Rating</option>
+								<option value="">Name (A - Z)</option>
+								<option value="">Name (Z - A)</option>
+								<option value="">Price (Low &gt; High)</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="form-group input-group input-group-sm position-relative mb-3">
+							<div class="selec-icon">
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+							</div>
+							<select id="input-price" class="form-control selectpicker bs-select-hidden">
+								<option value="" selected="selected">Popularity</option>
+								<option value="">Price (High &gt; Low)</option>
+								<option value="">Rating (Highest)</option>
+								<option value="">Rating (Lowest)</option>
+								<option value="">Model (A - Z)</option>
+								<option value="">Model (Z - A)</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-sm-3 list d-none d-sm-block">
+						<div class="btn-group btn-group-sm float-end">
+							<button type="button" id="grid-view" class="btn btn-default btngrid active" data-toggle="tooltip" title="Grid"><i class="fa fa-th-large" aria-hidden="true"></i></button>
+
+							<button type="button" id="list-view" class="btn btn-default btngrid" data-toggle="tooltip" title="List"><i class="fa fa-list-ul" aria-hidden="true"></i></button>
+						</div>
+					</div>
+				</div>
+
+				<div class="row tour packages">
+					<div class="product-layout product-grid col-lg-4 col-md-6 col-sm-6 col-xs-12">
+						<div class="product-thumb">
+							<div class="image">
+								<a href="#"><img src="images_folder/images3/01.jpg" alt="image" title="image" class="img-responsive"></a>
+								<div class="hoverbox">
+									<div class="icon_plus" aria-hidden="true"></div>
+								</div>
+							</div>
+							<div class="caption">
+								<ul class="list-inline link">
+									<li><i class="fa-regular fa-clock"></i>12 Days</li>
+									<li><i class="fa-solid fa-location-dot"></i> South Africa</li>
+									<li><i class="fa fa-dollar"></i> 3100</li>
+								</ul>
+								<div class="inner">
+									<h4>Safari Tour</h4>
+									<div class="rate">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</div>
+									<ul class="list-inline">
+										<li class="d-inline-block"><i class="fa-solid fa-location-dot"></i> South Africa</li>
+										<li class="d-inline-block"><i class="fa-regular fa-clock"></i>12 Days</li>
+									</ul>
+									<p class="des">Wildlife up close, breathtaking views—book your safari adventure!</p>
+								</div>
+								<div class="text-left">
+									<button type="button" onclick="location.href='hotel-booking-form.html'">Book Now <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+									<button type="button" onclick="location.href='package-detail-view.html'">View More <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+									<p>$3100.00</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="product-layout product-grid col-lg-4 col-md-6 col-sm-6 col-xs-12">
+						<div class="product-thumb">
+							<div class="image">
+								<a href="#"><img src="images_folder/images3/02.jpg" alt="image" title="image" class="img-responsive"></a>
+								<div class="hoverbox">
+									<div class="icon_plus" aria-hidden="true"></div>
+								</div>
+							</div>
+							<div class="caption">
+								<ul class="list-inline link">
+									<li><i class="fa-regular fa-clock"></i>12 Days</li>
+									<li><i class="fa-solid fa-location-dot"></i> Usa Tour</li>
+									<li><i class="fa fa-dollar"></i> 6100</li>
+								</ul>
+								<div class="inner">
+									<h4>USA Tour</h4>
+									<div class="rate">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</div>
+									<ul class="list-inline">
+										<li class="d-inline-block"><i class="fa-solid fa-location-dot"></i> South Africa</li>
+										<li class="d-inline-block"><i class="fa-regular fa-clock"></i>12 Days</li>
+									</ul>
+									<p class="des">Discover the best of the USA with our exclusive tours! </p>
+								</div>
+								<div class="text-left">
+									<button type="button" onclick="location.href='hotel-booking-form.html'">Book Now <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+									<button type="button" onclick="location.href='package-detail-view.html'">View More <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+									<p>$6100.00</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="product-layout product-grid col-lg-4 col-md-6 col-sm-6 col-xs-12">
+						<div class="product-thumb">
+							<div class="image">
+								<a href="#"><img src="images_folder/images3/03.jpg" alt="image" title="image" class="img-responsive"></a>
+								<div class="hoverbox">
+									<div class="icon_plus" aria-hidden="true"></div>
+								</div>
+							</div>
+							<div class="caption">
+								<ul class="list-inline link">
+									<li><i class="fa-regular fa-clock"></i>12 Days</li>
+									<li><i class="fa-solid fa-location-dot"></i> Europe</li>
+									<li><i class="fa fa-dollar"></i>1100</li>
+								</ul>
+								<div class="inner">
+									<h4>Europe Tour</h4>
+									<div class="rate">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</div>
+									<ul class="list-inline">
+										<li class="d-inline-block"><i class="fa-solid fa-location-dot"></i> South Africa</li>
+										<li class="d-inline-block"><i class="fa-regular fa-clock"></i>12 Days</li>
+									</ul>
+									<p class="des">"The World Cup unites nations in a thrilling global"</p>
+								</div>
+								<div class="text-left">
+									<button type="button" onclick="location.href='hotel-booking-form.html'">Book Now <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+									<button type="button" onclick="location.href='package-detail-view.html'">View More <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+									<p>1100.00</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="product-layout product-grid col-lg-4 col-md-6 col-sm-6 col-xs-12">
+						<div class="product-thumb">
+							<div class="image">
+								<a href="#"><img src="images_folder/images3/01.jpg" alt="image" title="image" class="img-responsive"></a>
+								<div class="hoverbox">
+									<div class="icon_plus" aria-hidden="true"></div>
+								</div>
+							</div>
+							<div class="caption">
+								<ul class="list-inline link">
+									<li><i class="fa-regular fa-clock"></i>12 Days</li>
+									<li><i class="fa-solid fa-location-dot"></i>Africa</li>
+									<li><i class="fa fa-dollar"></i> 3100</li>
+								</ul>
+								<div class="inner">
+									<h4>Africa Tour</h4>
+									<div class="rate">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</div>
+									<ul class="list-inline">
+										<li class="d-inline-block"><i class="fa-solid fa-location-dot"></i>Africa</li>
+										<li class="d-inline-block"><i class="fa-regular fa-clock"></i>12 Days</li>
+									</ul>
+									<p class="des">Join the narural beauty of africa</p>
+								</div>
+								<div class="text-left">
+									<button type="button" onclick="location.href='hotel-booking-form.html'">Book Now <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+									<button type="button" onclick="location.href='package-detail-view.html'">View More <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+									<p>$3100.00</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="product-layout product-grid col-lg-4 col-md-6 col-sm-6 col-xs-12">
+						<div class="product-thumb">
+							<div class="image">
+								<a href="#"><img src="images_folder/images3/01.jpg" alt="image" title="image" class="img-responsive"></a>
+								<div class="hoverbox">
+									<div class="icon_plus" aria-hidden="true"></div>
+								</div>
+							</div>
+							<div class="caption">
+								<ul class="list-inline link">
+									<li><i class="fa-regular fa-clock"></i>12 Days</li>
+									<li><i class="fa-solid fa-location-dot"></i>Africa</li>
+									<li><i class="fa fa-dollar"></i> 3100</li>
+								</ul>
+								<div class="inner">
+									<h4>Africa Tour</h4>
+									<div class="rate">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</div>
+									<ul class="list-inline">
+										<li class="d-inline-block"><i class="fa-solid fa-location-dot"></i>Africa</li>
+										<li class="d-inline-block"><i class="fa-regular fa-clock"></i>12 Days</li>
+									</ul>
+									<p class="des">Join the narural beauty of africa</p>
+								</div>
+								<div class="text-left">
+									<button type="button" onclick="location.href='hotel-booking-form.html'">Book Now <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+									<button type="button" onclick="location.href='package-detail-view.html'">View More <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+									<p>$3100.00</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="product-layout product-grid col-lg-4 col-md-6 col-sm-6 col-xs-12">
+						<div class="product-thumb">
+							<div class="image">
+								<a href="#"><img src="images_folder/images3/03.jpg" alt="image" title="image" class="img-responsive"></a>
+								<div class="hoverbox">
+									<div class="icon_plus" aria-hidden="true"></div>
+								</div>
+							</div>
+							<div class="caption">
+								<ul class="list-inline link">
+									<li><i class="fa-regular fa-clock"></i>12 Days</li>
+									<li><i class="fa-solid fa-location-dot"></i> South Africa</li>
+									<li><i class="fa fa-dollar"></i> 3100</li>
+								</ul>
+								<div class="inner">
+									<h4>Safari Tour</h4>
+									<div class="rate">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</div>
+									<ul class="list-inline">
+										<li class="d-inline-block"><i class="fa-solid fa-location-dot"></i> South Africa</li>
+										<li class="d-inline-block"><i class="fa-regular fa-clock"></i>12 Days</li>
+									</ul>
+									<p class="des">Join the world cup today </p>
+								</div>
+								<div class="text-left">
+									<button type="button" onclick="location.href='hotel-booking-form.html'">Book Now <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+									<button type="button" onclick="location.href='package-detail-view.html'">View More <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+									<p>$3100.00</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<ul class="pagination d-block">
+					<li>
+						<a href="#" aria-label="Previous">Prev</a>
+					</li>
+					<li class="active">
+						<a href="#"> 1</a>
+					</li>
+					<li>
+						<a href="#"> 2</a>
+					</li>
+					<li>
+						<a href="#">3</a>
+					</li>
+					<li>
+						<a href="#"> 4</a>
+					</li>
+					<li>
+						<a href="#">...</a>
+					</li>
+					<li>
+						<a href="#">10</a>
+					</li>
+					<li>
+						<a href="#" aria-label="Next">Next</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- main container end here -->
+
+<!-- news start here -->
+<div class="news">
+	<img src="images_folder/images3/subscribe-bg.jpg" class="img-responsive sub" alt="subscribe-bg" title="subscribe-bg">
+	<div class="newsinner">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 col-xs-12">
+					<div class="product-thumb">
+						<div class="image">
+							<a href="#"><img src="images_folder/images3/foot-banner1.png" alt="foot-banner1" title="foot-banner1" class="img-responsive w-100"></a>
+							<div class="hoverbox"></div>
+							<div class="matter">
+								<p class="des"><span class="icon_building_alt"></span> Hotel</p>
+								<button type="button"> Booking Now</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 col-xs-12">
+					<div class="product-thumb">
+						<div class="image">
+							<a href="#"><img src="images_folder/images3/foot-banner2.png" alt="foot-banner2" title="foot-banner2" class="img-responsive w-100"></a>
+							<div class="hoverbox"></div>
+							<div class="off">
+								<span>Best Packages</span>
+							</div>
+							<div class="matter">
+								<p class="des1">$1000 <span>Package</span> to <small>Dubai</small></p>
+								<button type="button"> Booking Now</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 col-xs-12">
+					<div class="product-thumb">
+						<div class="image">
+							<a href="#"><img src="images_folder/images3/foot-banner3.png" alt="foot-banner3" title="foot-banner3" class="img-responsive w-100"></a>
+							<div class="hoverbox"></div>
+							<div class="matter">
+								<p class="des2"><i class="icon_percent_alt"></i> 25% off<br> to <span>Island</span></p>
+								<button type="button"> Booking Now</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-xs-12">
+					<form class="subscribe">
+						<div class="form-group">
+							<div class="input-group align-items-center input-group">
+								<label>Subscribe to our newsletter</label>
+								<input placeholder="Enter your email" name="subscribe_email" value="" type="text">
+								<button class="btn btn-default btn-lg" type="submit">Subscribe Now</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="footer"></div>
+
+
+<script src="js_folder/js3/jquery-3.6.0.min.js"></script>
+
+<script src="js_folder/js3/popper.min.js"></script>
+<script src="js_folder/js3/bootstrap.bundle.min.js"></script>
+
+<script src="js_folder/js3/bootstrap-select.min.js"></script>
+
+<script src="js_folder/js3/owl.carousel.js"></script>
+
+<script src="js_folder/js3/bootstrap-datetimepicker.min.js"></script>
+
+<script src="js_folder/js3/check.js"></script>
+<script src="js_folder/js3/prettyCheckable.min.js"></script>
+
+<script src="js_folder/js3/internal.js"></script>
+<script type="text/javascript">
+ $(function() {
+        $('#datepicker').datepicker();
+        $('#datepicker1').datepicker();
+        $('#datepicker2').datepicker();
+        $('#datepicker3').datepicker();
+        $('#datepicker4').datepicker();
+        $('#datepicker5').datepicker();
+    });
+</script>
+
+</body></html>
